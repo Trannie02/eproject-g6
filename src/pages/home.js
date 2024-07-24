@@ -1,29 +1,29 @@
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import './home.css'
 export default function Home() {
-
+    const url = process.env.PUBLIC_URL;
     return (
         <div className="home-container">
             <div className="home-item">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/images/clock.jpg" class="d-block w-100" alt="clock" />
+                            <img src={url+"/images/clock.jpg"} class="d-block w-100" alt="clock" />
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/br logo.jpg" class="d-block w-100" alt="brlogo" />
+                            <img src={url+"/images/br logo.jpg"} class="d-block w-100" alt="brlogo" />
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/magnifying-glass.jpg" class="d-block w-100" alt="manifyingglass" />
+                            <img src={url+"/images/magnifying-glass.jpg"} class="d-block w-100" alt="manifyingglass" />
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/camera.jpg" class="d-block w-100" alt="camera" />
+                            <img src={url+"/images/camera.jpg"} class="d-block w-100" alt="camera" />
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/key.jpg" class="d-block w-100" alt="key" />
+                            <img src={url+"/images/key.jpg"} class="d-block w-100" alt="key" />
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/pipes.jpg" class="d-block w-100" alt="pipes" />
+                            <img src={url+"/images/pipes.jpg"} class="d-block w-100" alt="pipes" />
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -47,7 +47,7 @@ export default function Home() {
                             <a href="/antiques">How to sell</a>
                         </div>
                         <div className="col-md-5 first-how-to-sell-img">
-                            <img src="/images/gavel.jpeg" alt=""/>
+                            <img src={url+"/images/gavel.jpeg"} alt=""/>
                         </div>
                     </div>
                 </div>
